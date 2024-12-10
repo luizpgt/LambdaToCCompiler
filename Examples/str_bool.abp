@@ -1,0 +1,9 @@
+-- this is a comment
+\(x: Bool -> 
+if 
+    x
+then
+    [84,114,117,101] -- True 
+else
+    [70,97,108,115,101] -- False 
+) true

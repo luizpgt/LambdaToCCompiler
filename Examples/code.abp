@@ -1,0 +1,2 @@
+-- comment
+\(x: (Num -> Num) -> (x 7) + 1) \(y: Num -> y * 2) 

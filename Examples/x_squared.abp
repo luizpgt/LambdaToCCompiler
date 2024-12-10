@@ -1,0 +1,5 @@
+-- this is a comment
+\(x: 
+    (Num -> Num) -> (x 2) * (x 2)) 
+        \(y:
+            Num -> y + 1)

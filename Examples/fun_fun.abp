@@ -1,0 +1,7 @@
+-- this is a comment
+if 
+    \(y: Bool -> y or false) false 
+then 
+    \(x: Num -> x + 1) 2 
+else 
+    \(z: Num -> z + 2) 2

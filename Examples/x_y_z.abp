@@ -1,0 +1,10 @@
+-- this is a comment
+\(x: (Num -> Num) -> x 7) 
+    \(y: (Num->Num)->               -- 2. receive z function 
+        if
+            (y 2) == 4              -- 3. apply 2 to received function and compare
+        then 
+            y                       -- 4. returns the same arg function
+        else 
+            \(k: Num -> k * 7)      -- 5. returns a new function otherwise
+    ) \(z: Num -> z * 2)            -- 1. pass the z function to y

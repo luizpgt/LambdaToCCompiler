@@ -1,0 +1,14 @@
+-- this is a comment 
+\(x: Num -> 
+    if 
+        x >= 18 
+    then 
+        [65,100,117,108,116,111] -- Adulto 
+    else 
+        if 
+            x >= 11
+        then 
+            [65,100,111,108,101,115,99,101,110,116,101] -- Adolescente
+        else
+            [67,114,105,97,110,99,97] -- Crianca
+ ) 21
