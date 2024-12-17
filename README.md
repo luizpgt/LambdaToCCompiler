@@ -15,6 +15,7 @@ This project is a **typed lambda calculus to C compiler** written in Haskell. It
 
 - **GHC (Glasgow Haskell Compiler)**: Required to run the Haskell code.
 - **C Compiler**: To compile the generated C code (e.g., GCC or Clang).
+- **Happy**: `Parser.y` - Happy is a parser generator system for Haskell, similar to the tool yacc for C.
 
 ## Project Structure
 
@@ -84,6 +85,10 @@ gcc -o output main.c
 For questions or further support, feel free to reach out!
 
 # Tinker with possibilities
+
+<details>
+
+<summary> Expand possibilities </summary> 
 
 Operations order: 
 
@@ -157,7 +162,12 @@ App Lam Lst
 typecheck $ parser $ lexer "\\(x: Lst Num -> x * 7) [0,1,2,3,4,5,6,7,8,9,10]"
 ```
 
+</details>
+
 # C structures that are/could be explored in this compiler: 
+
+<details>
+<summary> Expand C structures overview </summary>
 
 ## C Syntax 
 
@@ -165,7 +175,12 @@ typecheck $ parser $ lexer "\\(x: Lst Num -> x * 7) [0,1,2,3,4,5,6,7,8,9,10]"
 
 ### Macros (\#define)
 
+<details>
+<summary> Expand Macros overview </summary>
+
+
 [Macros - GCC](https://gcc.gnu.org/onlinedocs/cpp/Macros.html)
+
 [C Preprocessor Macros - Programiz](https://www.programiz.com/c-programming/c-preprocessor-macros)
 
 Function like Macros:
@@ -192,11 +207,15 @@ int main()
 }
 ```
 
----
+</details>
 
 ### Function Pointers
 
+<details>
+<summary> Expand Function Pointers overview </summary>
+
 [Function Pointers in C - GeeksForGeeks](https://www.geeksforgeeks.org/function-pointer-in-c/)
+
 [Function Pointer - Wikipedia](https://en.wikipedia.org/wiki/Function_pointer)
 
 
@@ -240,9 +259,15 @@ int main() {
 } 
 ```
 
+</details>
+
 ### Pragma Directive (\#pragma)
 
+<details>
+<summary> Expand Prama overview </summary>
+
 [pragma Directive in C - GeeksForGeeks](https://www.geeksforgeeks.org/pragma-directive-in-c-c/)
+
 [Directive or Pragma - Wikipedia](https://en.wikipedia.org/wiki/Directive_(programming))
 
 The \#pragma directive in C is used to provide additional instructions to the compiler, often to control specific compiler features or optimizations. 
@@ -295,12 +320,17 @@ More at GeeksForGeeks:
 5. \#pragma GCC system_header
 6. \#pragma once
 
----
+</details>
 
 ### Ternary Operator (condition ? value_if_true : value_if_false)
 
+<details>
+<summary> Expand Ternary Operator overview </summary>
+
 [Ternary Operator in C Explained - FreeCodeCamp](https://www.freecodecamp.org/news/c-ternary-operator/)
+
 [Conditional or Ternary Operator (?:) in C - GeeksForGeeks](https://www.geeksforgeeks.org/conditional-or-ternary-operator-in-c/)
+
 [Ternary Conditional Operator - Wikipedia](https://en.wikipedia.org/wiki/Ternary_conditional_operator)
 
 General Syntax: 
@@ -330,3 +360,7 @@ int a = 1, b = 2, ans;
 ans = (a == 1 ? (b == 2 ? 3 : 5) : 0);
 printf ("%d\n", ans);
 ```
+
+</details>
+
+</details>
